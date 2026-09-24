@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c0f14" />
+  <title>About · 血月天狼</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Your Name home">
+        <span>血月天狼</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html" aria-current="page">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-shell shell">
+      <div class="page-heading">
+        <p class="eyebrow">INTRODUCTION</p>
+        <h1>自我介紹</h1>
+      </div>
+
+      <div class="about-layout">
+        <aside class="profile-card">
+          <img class="profile-avatar" src="assets/avatar.jpeg" alt="Stylized placeholder avatar" />
+          <h2>血月天狼</h2>
+          <a href="mailto:wolf@nfwolf.com">nfwolf@nfwolf.com</a>
+        </aside>
+
+        <div class="about-content">
+          <section class="info-card">
+            <ul class="fact-list">
+              <li><span>Name</span><strong>血月天狼</strong></li>
+              <li><span>Species</span><strong>狼</strong></li>
+              <li><span>Languages</span><strong>English · 國語 · 廣東話</strong></li>
+            </ul>
+          </section>
+
+          <section class="info-card prose-card">
+            <h2>血狼使用手冊</h2>
+			<p>
+			  •	名字血月天狼，可以叫血狼或者天狼<br>
+			  •	Furry, Puppy<br>
+			  •	來自廣東，目前在紐西蘭 Wellington 上學<br>
+			  •	隨機出現在 🇨🇳廣東、🇭🇰香港、🇬🇧英國、🇺🇸美國、🇹🇼台灣、🇳🇿紐西蘭及 🇦🇺澳洲<br>
+			  •	語言：English、廣東話、國語<br>
+			  •	170/63/14.5/0（很瘦，很小隻）<br>
+			  •	<span id="age"></span>歲<br>
+			  •	悶騷變態抖M（？<br>
+			  •	<a href="https://twitter.com/FurShadow_SFW" target="_blank" rel="noopener noreferrer">Shadow</a> 的所有物<br>
+			  •	會一點點鋼琴，可惜沒條件繼續學下去<br>
+			  •	FF14玩家，陸服：陸行鳥 @晨曦王座，美服：Aether @Midgardsormr，繁中服：@鳳凰<br>
+			  •	輕度鐵路迷<br>
+			  •	Twitter 和 FA 都是色色
+			</p>
+          </section>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© <span 2026></span> 血月天狼</p>
+      <a href="index.html">Back home ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+  const birthYear = 2000;
+  const currentYear = new Date().getFullYear();
+
+  document.getElementById("age").textContent = currentYear - birthYear;
+</script>
